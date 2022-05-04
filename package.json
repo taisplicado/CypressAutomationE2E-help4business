@@ -1,0 +1,17 @@
+{
+  "name": "saucedemo_testes",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "teste"
+  },
+  "keywords": [
+    "teste"
+  ],
+  "author": "Tais",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.5.0"
+  }
+}

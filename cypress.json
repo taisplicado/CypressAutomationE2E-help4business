@@ -1,0 +1,12 @@
+{
+    "baseUrl": "https://help-4-business.web.app/",
+    "defaultCommandTimeout": 15000,
+    "reporter": "junit",
+    "watchForFileChanges": false,
+    "chromeWebSecurity": false,
+    "reporterOptions": {
+      "mochaFile": "results/my-test-output-[hash].xml",
+      "toConsole": true
+      
+    }
+  }
