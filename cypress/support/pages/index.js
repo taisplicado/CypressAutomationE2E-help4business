@@ -113,11 +113,9 @@ const el = {
         criarNovaSolicitação(){
             cy.get(el.btSolicitacoes).click();
             cy.get(el.btNovaSolicitacao).click();
-            cy.get(el.btSelectPrioridade).select('value="LOW"');
+            cy.get(el.btSelectPrioridade).select('MEDIUM');
             cy.get(el.tfDescricao).type('Olá, prezados. O meu computador não está ligando! Vocês podem verificar? Obrigada!');
             cy.get(el.btCadastrar).click();
-
-
         }
     
         
