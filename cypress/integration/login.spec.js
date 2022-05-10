@@ -9,12 +9,13 @@ describe('Funcionalidade efetuar login no sistema', () => {
     afterEach(() => {
   
     })
-    it.only('Realizar login com sucesso', () => {
+    it('Realizar login com sucesso', () => {
         help.validarTelaLogin();
         help.realizarLogin();
     })
     it('Realizar login com falha - Senha incorreta', () => {
         help.validarTelaLogin();
         help.realizarLoginSenhaIncorreta();
+        
     })
 })

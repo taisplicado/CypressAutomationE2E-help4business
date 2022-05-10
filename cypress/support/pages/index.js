@@ -110,11 +110,32 @@ const el = {
             cy.get(el.tfPassword).type('senha1213123');
             cy.get(el.btLogin).click();
         }
-        criarNovaSolicitação(){
+        criarNovaSolicitaçãoBaixa(){
+            cy.get(el.btSolicitacoes).click();
+            cy.get(el.btNovaSolicitacao).click();
+            cy.get(el.btSelectPrioridade).select('LOW');
+            cy.get(el.tfDescricao).type('Olá, prezados. O Excel não está funcionando no meu computador! Vocês podem verificar? Obrigada!');
+            cy.get(el.btCadastrar).click();
+        }
+        criarNovaSolicitaçãoMedia(){
             cy.get(el.btSolicitacoes).click();
             cy.get(el.btNovaSolicitacao).click();
             cy.get(el.btSelectPrioridade).select('MEDIUM');
             cy.get(el.tfDescricao).type('Olá, prezados. O meu computador não está ligando! Vocês podem verificar? Obrigada!');
+            cy.get(el.btCadastrar).click();
+        }
+        criarNovaSolicitaçãoAlta(){
+            cy.get(el.btSolicitacoes).click();
+            cy.get(el.btNovaSolicitacao).click();
+            cy.get(el.btSelectPrioridade).select('HIGH');
+            cy.get(el.tfDescricao).type('Olá, prezados. Não estou conseguindo conectar na internet com o meu computador! Vocês podem verificar? Obrigada!');
+            cy.get(el.btCadastrar).click();
+        }
+        criarNovaSolicitaçãoCritica(){
+            cy.get(el.btSolicitacoes).click();
+            cy.get(el.btNovaSolicitacao).click();
+            cy.get(el.btSelectPrioridade).select('CRITICAL');
+            cy.get(el.tfDescricao).type('Olá, prezados. Não estou conseguindo acessar o servidor da empresa! Vocês podem verificar? Obrigada!');
             cy.get(el.btCadastrar).click();
         }
     

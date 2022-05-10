@@ -10,9 +10,24 @@ describe('Funcionalidade cadastro de Usuário do sistema', () => {
 
     })
   
-    it.only('Realizar cadastro de nova solicitação', () => {
+    it('Realizar cadastro de nova solicitação com prioridade baixa', () => {
         help.validarTelaLogin();
         help.realizarLogin();
-        help.criarNovaSolicitação();
+        help.criarNovaSolicitaçãoBaixa();
+    })
+    it('Realizar cadastro de nova solicitação com prioridade média', () => {
+        help.validarTelaLogin();
+        help.realizarLogin();
+        help.criarNovaSolicitaçãoMedia();
+    })
+    it('Realizar cadastro de nova solicitação com prioridade alta', () => {
+        help.validarTelaLogin();
+        help.realizarLogin();
+        help.criarNovaSolicitaçãoAlta();
+    })
+    it('Realizar cadastro de nova solicitação com prioridade crítica', () => {
+        help.validarTelaLogin();
+        help.realizarLogin();
+        help.criarNovaSolicitaçãoCritica();
     })
 })
